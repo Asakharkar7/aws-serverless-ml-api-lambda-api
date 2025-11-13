@@ -9,39 +9,36 @@ This project demonstrates how companies deploy inference endpoints without EC2, 
 
 ## 🚀 Architecture Overview
 
+<img width="1536" height="1024" alt="Architecture" src="https://github.com/user-attachments/assets/a7f9e79e-a3b0-46c2-a9b5-2740c02c48e0" />
 
 
----
-
-## 🧩 Components in This Repository
-
-| Folder | Description |
-|--------|-------------|
-| `/lambda/` | Lambda code for prediction |
-| `/model/` | Trained scikit-learn `.pkl` model |
-| `/test_requests/` | Sample prediction JSON |
-| `/architecture/ml_api_diagram.png` | Architecture diagram |
-| `/layers/` | (Optional) zipped scikit-learn Lambda Layer |
 
 ---
 
-## 🛠️ Technologies Used
+🛠️ Technologies Used
 
-- **AWS Lambda** — Python ML inference  
-- **AWS API Gateway** — REST endpoint  
-- **scikit-learn** — model training + inference  
-- **IAM** — secure Lambda execution role  
-- **CloudWatch** — logs + debugging  
+AWS Lambda — Python serverless compute
+
+AWS API Gateway — REST endpoint + routing
+
+scikit-learn — ML model training & inference
+
+AWS Lambda Layer — packaged sklearn dependencies
+
+IAM — secure execution roles
+
+CloudWatch Logs — monitoring, debugging, observability
 
 ---
 
-## 🧠 What the Lambda Does
+🧠 What the Lambda Does
 
-✔ Accepts POST requests with JSON  
-✔ Parses feature inputs  
-✔ Loads the ML model  
-✔ Runs inference  
-✔ Returns probabilistic + label output  
+✔ Accepts POST requests with JSON
+✔ Validates & parses features
+✔ Loads scikit-learn model from local file or Lambda Layer
+✔ Runs prediction logic
+✔ Returns label + probability + metadata
+✔ Publishes logs to CloudWatch
 
 ---
 
@@ -70,6 +67,16 @@ This project demonstrates how companies deploy inference endpoints without EC2, 
   }
 }
 
+⚙️ Deployment Steps (Summary)
+
+1️⃣ Create Lambda function
+2️⃣ Upload code + model
+3️⃣ (Optional) Attach Lambda Layer for sklearn
+4️⃣ Create API Gateway → POST /predict route
+5️⃣ Enable CORS
+6️⃣ Deploy API stage (prod, $default)
+7️⃣ Test via Thunder Client / Postman
+
 🎯 Key Highlights
 
 Fully serverless — no EC2, no Docker needed
@@ -81,4 +88,14 @@ Reusable Lambda Layer for sklearn
 Works on AWS Free Tier
 
 Perfect interview project for ML/AI/Data Engineering
+
+📌 Use Cases
+
+Real-time prediction APIs
+
+Lightweight ML inference microservices
+
+Low-latency scoring endpoints
+
+Education & portfolio cloud projects
 
