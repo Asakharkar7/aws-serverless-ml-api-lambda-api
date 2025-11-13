@@ -52,12 +52,9 @@ CloudWatch Logs — monitoring, debugging, observability
 
 ## 📥 Example Request (POST /predict)
 
-json
 {
   "feature_1": 10,
-  
   "feature_2": 3,
-  
   "feature_3": 1
 }
 
@@ -79,6 +76,7 @@ json
 
 
 
+
 ⚙️ Deployment Steps (Summary)
 
 1️⃣ Create Lambda function
@@ -96,6 +94,7 @@ json
 7️⃣ Test via Thunder Client / Postman
 
 
+
 🎯 Key Highlights
 
 Fully serverless — no EC2, no Docker needed
@@ -107,6 +106,7 @@ Reusable Lambda Layer for sklearn
 Works on AWS Free Tier
 
 Perfect interview project for ML/AI/Data Engineering
+
 
 
 📌 Use Cases
