@@ -34,11 +34,17 @@ CloudWatch Logs — monitoring, debugging, observability
 🧠 What the Lambda Does
 
 ✔ Accepts POST requests with JSON
+
 ✔ Validates & parses features
+
 ✔ Loads scikit-learn model from local file or Lambda Layer
+
 ✔ Runs prediction logic
+
 ✔ Returns label + probability + metadata
+
 ✔ Publishes logs to CloudWatch
+
 
 ---
 
@@ -47,7 +53,9 @@ CloudWatch Logs — monitoring, debugging, observability
 json
 {
   "feature_1": 10,
+  
   "feature_2": 3,
+  
   "feature_3": 1
 }
 
