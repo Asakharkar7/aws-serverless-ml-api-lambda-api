@@ -1,4 +1,4 @@
-```markdown
+
 # 🤖 Serverless Machine Learning Prediction API  
 AWS Lambda + API Gateway + scikit-learn
 
