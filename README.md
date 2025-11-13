@@ -44,7 +44,7 @@ CloudWatch Logs — monitoring, debugging, observability
 
 ## 📥 Example Request (POST /predict)
 
-```json
+json
 {
   "feature_1": 10,
   "feature_2": 3,
