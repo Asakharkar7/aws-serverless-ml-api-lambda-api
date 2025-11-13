@@ -78,11 +78,17 @@ json
 ⚙️ Deployment Steps (Summary)
 
 1️⃣ Create Lambda function
+
 2️⃣ Upload code + model
+
 3️⃣ (Optional) Attach Lambda Layer for sklearn
+
 4️⃣ Create API Gateway → POST /predict route
+
 5️⃣ Enable CORS
+
 6️⃣ Deploy API stage (prod, $default)
+
 7️⃣ Test via Thunder Client / Postman
 
 🎯 Key Highlights
