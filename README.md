@@ -29,6 +29,7 @@ IAM — secure execution roles
 
 CloudWatch Logs — monitoring, debugging, observability
 
+
 ---
 
 🧠 What the Lambda Does
@@ -44,6 +45,7 @@ CloudWatch Logs — monitoring, debugging, observability
 ✔ Returns label + probability + metadata
 
 ✔ Publishes logs to CloudWatch
+
 
 
 ---
@@ -75,6 +77,8 @@ json
   }
 }
 
+
+
 ⚙️ Deployment Steps (Summary)
 
 1️⃣ Create Lambda function
@@ -91,6 +95,7 @@ json
 
 7️⃣ Test via Thunder Client / Postman
 
+
 🎯 Key Highlights
 
 Fully serverless — no EC2, no Docker needed
@@ -102,6 +107,7 @@ Reusable Lambda Layer for sklearn
 Works on AWS Free Tier
 
 Perfect interview project for ML/AI/Data Engineering
+
 
 📌 Use Cases
 
